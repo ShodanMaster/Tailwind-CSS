@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme:{
+                colors: {
+                    //only this color in you website
+                    transparent: 'transparent',
+                    current: 'currentColor',
+                    'white': '#ffffff',
+                    'purple': '#3f3cbb',
+                    'midnight': '#121063',
+                    'metal': '#565584',
+                    'tahiti': '#3ab7bf',
+                    'silver': '#ecebff',
+                    'bubble-gum': '#ff77e9',
+                    'bermuda': '#78dcca',
+                },
+                extend:{
+                    //this color also with other tailwind color
+                    colors: {
+                        'myColor' : '#ff77e9'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container mx-auto">
+        <h1 class="text-3xl md:text-center text-red-600 sm:py-5 md:py-10">Tailwing-CSS</h1>
+        <h1 class="text-3xl md:text-center text-[#2699fb] sm:py-5 md:py-10">Tailwing-CSS</h1>
+        <h1 class="text-3xl md:text-center text-metal sm:py-5 md:py-10">Tailwing-CSS</h1>
+        <h1 class="text-3xl md:text-center text-[green] sm:py-5 md:py-10">Tailwing-CSS</h1>
+        <h1 class="text-3xl md:text-center text-myColor sm:py-5 md:py-10">Tailwing-CSS</h1>
+    </div>
+</body>  
+</html>

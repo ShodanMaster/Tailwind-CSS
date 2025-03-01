@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme:{
+                // custom pixels for classes
+                screens: {
+                    'sm': '640px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                    },
+                extend:{
+                    screens: {
+                        'lg': '992px',
+                        // => @media (min-width: 992px) { ... }
+                    },
+                    colors:{
+                        wscolor: '#2699fb',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container bg-red-500 mx-auto">
+
+        <h1 class="text-3xl xs:text-center sm: text-center lg: text-center py-5 lg:py-10 wscolor1">This is Heading</h1>
+    </div>
+</body>
+</html>
