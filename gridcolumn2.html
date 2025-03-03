@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme:{
+                // custom pixels for classes
+                screens: {
+                    'sm': '640px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                },
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="max-w-[1200px] py-5 text-white mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-5">
+        <div class="col-start-2 col-end-5 bg-[green] py-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellat ut optio vel voluptas ipsum numquam fuga velit accusamus provident sint dolorum temporibus obcaecati qui hic ullam. Ut, reiciendis officia, voluptas, adipisci vel officiis non reprehenderit illo eaque iusto perferendis. Et qui eum exercitationem iusto facilis amet nesciunt ab dolore!</div>
+        <div class="bg-[green] py-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellat ut optio vel voluptas ipsum numquam fuga velit accusamus provident sint dolorum temporibus obcaecati qui hic ullam. Ut, reiciendis officia, voluptas, adipisci vel officiis non reprehenderit illo eaque iusto perferendis. Et qui eum exercitationem iusto facilis amet nesciunt ab dolore!</div>
+        <div class="bg-[green] py-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellat ut optio vel voluptas ipsum numquam fuga velit accusamus provident sint dolorum temporibus obcaecati qui hic ullam. Ut, reiciendis officia, voluptas, adipisci vel officiis non reprehenderit illo eaque iusto perferendis. Et qui eum exercitationem iusto facilis amet nesciunt ab dolore!</div>
+        <div class="bg-[green] py-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellat ut optio vel voluptas ipsum numquam fuga velit accusamus provident sint dolorum temporibus obcaecati qui hic ullam. Ut, reiciendis officia, voluptas, adipisci vel officiis non reprehenderit illo eaque iusto perferendis. Et qui eum exercitationem iusto facilis amet nesciunt ab dolore!</div>
+        <div class="bg-[green] py-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellat ut optio vel voluptas ipsum numquam fuga velit accusamus provident sint dolorum temporibus obcaecati qui hic ullam. Ut, reiciendis officia, voluptas, adipisci vel officiis non reprehenderit illo eaque iusto perferendis. Et qui eum exercitationem iusto facilis amet nesciunt ab dolore!</div>
+        <div class="lg:col-start-2 bg-[green] py-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellat ut optio vel voluptas ipsum numquam fuga velit accusamus provident sint dolorum temporibus obcaecati qui hic ullam. Ut, reiciendis officia, voluptas, adipisci vel officiis non reprehenderit illo eaque iusto perferendis. Et qui eum exercitationem iusto facilis amet nesciunt ab dolore!</div>
+        <div class="bg-[green] py-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellat ut optio vel voluptas ipsum numquam fuga velit accusamus provident sint dolorum temporibus obcaecati qui hic ullam. Ut, reiciendis officia, voluptas, adipisci vel officiis non reprehenderit illo eaque iusto perferendis. Et qui eum exercitationem iusto facilis amet nesciunt ab dolore!</div>
+        <div class="bg-[green] py-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellat ut optio vel voluptas ipsum numquam fuga velit accusamus provident sint dolorum temporibus obcaecati qui hic ullam. Ut, reiciendis officia, voluptas, adipisci vel officiis non reprehenderit illo eaque iusto perferendis. Et qui eum exercitationem iusto facilis amet nesciunt ab dolore!</div>
+    </div>
+</body>  
+</html>
